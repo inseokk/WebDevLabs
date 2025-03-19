@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="../static/script.js"></script>
   <link rel="stylesheet" href="../static/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +12,7 @@
   <meta name="description" content="Your name professional website">
   <title>Inseo Kim</title>
 </head>
-<body>
+<body onload="addYear()">
   <header>
     <h1 id="webname">Inseo Kim</h1>
     <nav class = "navigation">
@@ -25,13 +24,15 @@
   </header>
   <div class = "main">
     <h2>Things I do for fun</h2>
-    <ul>
+    <button onclick="showList()">Click to see...</button>
+    <ul id="hobbies">
       <li>Crochet and knit</li>
       <li>Draw</li>
       <li>Binge Kdramas</li>
       <li>Explore Pittsburgh and eat good food</li>
     </ul>
-    <footer>© Copyright Inseo Kim</footer>
+    <footer id="copyYear">© Copyright Inseo Kim</footer>
   </div>
+  <script src="../static/script.js"></script>
 </body>
 </html>

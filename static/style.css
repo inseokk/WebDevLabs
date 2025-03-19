@@ -42,3 +42,13 @@ form *{
   margin: auto;
   text-align: center;
 }
+
+button{
+  background-color:#92ad70;
+  font-weight: 300;
+  border-radius: 4px;
+}
+
+.invalidInput {
+  border: 2px solid #ff3860;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="./static/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" href="./static/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
   <meta name="description" content="Your name professional website">
   <title>Inseo Kim</title>
 </head>
-<body>
+<body onload="addYear()">
   <header>
     <h1 id="webname">Inseo Kim</h1>
     <nav>
@@ -24,10 +24,14 @@
     </nav>
   </header>
   <div class = "main">
-    <h2 id="h2">Hi, my name is Inseo</h2>
+    <h2 id="dynamic">Hi, my name is Inseo!</h2>
     <img src="static/cat.JPG" alt="blurry cat picture" width = "200">
-    <p id="intro">I am a freshman at CMU and this is my website!</p>
-    <footer>© Copyright Inseo Kim</footer>
+    <p id="shortBio">I am a freshman at CMU and this is my website!</p>
+    <p id="longBio" style="display: none;">I am a freshman at CMU and this is my website! I'm currently undeclared in Dietrich and hope to transfer to IS. In my free time, I enjoy crocheting, knitting, drawing, and exploring Pittsburgh with friends.</p>
+    <button id="readMore">Read More</button>
+    <button id="readLess" style="display: none;">Read Less</button>
+    <footer id="copyYear">© Copyright Inseo Kim</footer>
   </div>
+  <script src="./static/script.js"></script>
 </body>
 </html>
