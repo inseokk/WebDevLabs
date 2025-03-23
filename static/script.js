@@ -74,15 +74,15 @@ if (C > z) {
     var curr = year.getFullYear();
     const elem = document.getElementById("copyYear")
     elem.innerHTML += " " + curr;
-    const hobbies = document.getElementById("hobbies");
-    hobbies.style.display = 'none';
+    // const hobbies = document.getElementById("hobbies");
+    // hobbies.style.display = 'none';
   }
 
 
-  function showList(){
-    const elem = document.getElementById("hobbies");
-    elem.style.display = 'block';
-  }
+  // function showList(){
+  //   const elem = document.getElementById("hobbies");
+  //   elem.style.display = 'block';
+  // }
 
   $(document).ready(function() {
     $("#readMore").click(function() {
@@ -146,4 +146,16 @@ if (C > z) {
       alert("Form submitted successfully!");
       document.getElementById("contactForm").submit();
     }
+  }
+
+  function getAdvice(){
+    fetch("https://api.adviceslip.com/advice")
+    .then(response => response.json())
+    .then(data=>{
+      document.getElementById("adviceText").innerText = data.slip.advice;
+    })
+    .catch(error => {
+      console.error("Error fetching advice: ", error);
+      document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again."
+    });
   }

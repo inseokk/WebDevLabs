@@ -22,23 +22,29 @@
       <a class = "navigation" href="fun.html">Funsies</a>
     </nav>
   </header>
-  <div class = "main">
-    <h2>Contact Me</h2>
-    <form id="contactForm" onsubmit="validateForm(event)">
-      <label for="name">Name</label><br>
-      <input type="text" id="name" required><br>
-      
-      <label for="email">Email</label><br>
-      <input type="email" id="email" required><br>
-      
-      <label for="message">Comment</label><br>
-      <textarea rows="4" cols="30" id="message" required></textarea>
-      <br>
-      
-      <div id="validationMessage" class="validationMessage"></div>
-      
-      <input type="submit" value="Submit"><br>
-    </form>
+  <div class = "mainLayout">
+    <div class="item1">
+      <h2>Find Me</h2>
+      <iframe class = "maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.394216359406!2d-79.92284110000003!3d40.437705400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f201d834e195%3A0xcc9ddc2605240fb1!2sWaffallonia!5e0!3m2!1sen!2sus!4v1742394568272!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="item2">
+      <h2>Contact Me</h2>
+      <form id="contactForm" onsubmit="validateForm(event)">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" required><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" required><br>
+        
+        <label for="message">Comment</label><br>
+        <textarea rows="4" cols="30" id="message" required></textarea>
+        <br>
+        
+        <div id="validationMessage" class="validationMessage"></div>
+        
+        <input type="submit" value="Submit"><br>
+      </form>
+    </div>
     <p></p>
     <table>
       <tr>
@@ -59,3 +65,4 @@
   <script src="../static/script.js"></script>
 </body>
 </html>
+
